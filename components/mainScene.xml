@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="mainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/mainScene.brs" />
+    <children>
+        <Rectangle id="testRectangle" color="0x5700A9FF" width="1920" height="1080" />
+        <Label id="helloLabel" text="Hello World" horizAlign="center" vertAlign="center" width="1920" height="1080"/>
+    </children>
+</component>
