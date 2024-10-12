@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="profileItem" extends="Group" >
+
+    <interface>
+        <field id="text" type="string" onChange="onTextButtonChanged"/>
+        <field id="itemSelected" type="boolean"/>
+        <field id="uri" type="string" onChange="onUriChanged"/>
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/profile/profileItem.brs" />
+        <children>
+            <LayoutGroup
+                    id="profileItem"
+                    LayoutDirection="vert"
+                    itemSpacings="[50]"
+                    vertAlignment="center"
+                    horizAlignment="center">
+                    <Rectangle
+                      id="backgroundItem"
+                      color="0xD0BCFE80"
+                      width="400"
+                      height="400">
+                        <poster
+                          id="posterProfile"
+                          width="320"
+                          height="320"
+                          translation="[40, 40]" />
+                    </Rectangle>
+                    <appButton
+                      id="profileButton"/>
+
+              </LayoutGroup>
+        </children>
+</component>

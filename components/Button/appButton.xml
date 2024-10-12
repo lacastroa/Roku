@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="appButton" extends="Group" >
+
+    <interface>
+        <field id="text" type="string" onChange="onTextChanged"/>
+        <field id="buttonSelected" type="boolean" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/Button/appButton.brs" />
+
+    <children>
+        <Rectangle
+            id="background"
+            color="0xD0BCFE80"
+            height="80">
+            <Label
+                id="label"
+                horizAlign="center"
+                vertAlign="center"
+                height="80"
+                color="0xFFFFFF" />
+        </Rectangle>
+    </children>
+</component>

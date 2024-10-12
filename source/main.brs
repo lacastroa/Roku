@@ -1,22 +1,26 @@
 sub main()
     ' Empieza a escribir tu codigo a partir de esta linea
+    mostrarPantallaInicial()
 
-    print "Problema 1: Algoritmo para Encontrar el Número Mayor en un Array"
-    numeroMayor([2,3,-5,-100])
-
-    print "__________________________________________________________________"
-
-    print "Problema 2: Algoritmo para Calcular el Factorial de un Número"
-    factorial(3)
-    factorial(0)
-    factorial(1)
-
-    print "__________________________________________________________________"
-
-    print "Problema 3: Algoritmo para Generar la Serie de Fibonacci n=4"
-    print fibonacci(4)
 end sub
 
+sub mostrarPantallaInicial()
+    pantalla = CreateObject("roSGScreen")
+    puerto = CreateObject("roMessagePort")
+    pantalla.setMessagePort(puerto)
+    escena = pantalla.createScene("mainScene")
+
+    pantalla.show()
+
+    while(true)
+        evento = wait(0, puerto)
+        tipoEvento = type(evento)
+
+        if tipoEvento = "roSGScreenEvent"
+            if evento.isScreenClosed() then return
+        end if
+    end while
+end sub
 
 sub factorial(num as integer)
     n = num
