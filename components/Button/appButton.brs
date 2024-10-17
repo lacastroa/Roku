@@ -5,12 +5,13 @@ sub init()
 
     m.top.observeField("focusedChild", "onFocusChanged")
 end sub
-sub onFocusChanged()
 
+sub onFocusChanged()
+        print "the button has the focus"
     darkPurple = "0x200726"
     whiteColor = "0xFFFFFF"
 
-    if m.top.hasFocused() = true then
+    if m.top.hasFocus() = true then
         m.background.color = darkPurple
         m.label.color = whiteColor
     else
@@ -27,13 +28,14 @@ sub onTextChanged()
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
-
-    handle = false
+print "onKeyEventAppButton  " key
+    handled = false
 
     if press = true then
         if key = "OK" then
             m.top.buttonSelected = true
-            handle = true
+            handled = true
         end if
     end if
+    return handled
 end function

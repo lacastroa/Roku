@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="profileScene" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/scenes/profileScene.brs" />
+
+    <children>
+        <Group
+          id="background">
+          <Rectangle
+            id="background"
+            color="0x5700A9FF"
+            width="1920"
+            height="1080" />
+        </Group>
+        <Label
+          id="Tittle"
+          font="font:LargeBoldSystemFont"
+          text="¿Quién anda ahí?"
+          horizAlign="center"
+          vertAlign="center"
+          width="1920"
+          height="300"
+          color="0xD0BCFeff"/>
+        <LayoutGroup
+          id="profileSelector"
+          LayoutDirection="horiz"
+          itemSpacings="[50]"
+          translation="[85, 300]">
+          <profileItem
+            id="profileItem1"
+            text="Juanita"
+            uri="pkg:/images/profiles/cat.jpg"/>
+            <profileItem
+            id="profileItem2"
+            text="Pepito"
+            uri="pkg:/images/profiles/rooster.jpg"/>
+            <profileItem
+            id="profileItem3"
+            text="Luis Marlon"
+            uri="pkg:/images/profiles/horse.jpg"/>
+          <profileItem
+            id="profileItem4"
+            text="Milenio"
+            uri="pkg:/images/profiles/elephant.jpg"/>
+        </LayoutGroup>
+  </children>
+</component>
