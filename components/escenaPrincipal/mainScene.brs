@@ -1,5 +1,5 @@
 sub init()
     ?"CREANDO MAIN SCENE"
-    m.profileScene = m.top.findNode("profileScene")
-    m.profileScene.setFocus(true)
+    m.loginScene = m.top.findNode("loginScene")
+    m.loginScene.setFocus(true)
 end sub

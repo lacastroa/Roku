@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="loginScene" extends="Group" >
+
+    <script type="text/brightscript" uri="pkg:/components/scenes/loginScene.brs" />
+    <script type="text/brightscript" uri="pkg:/components/utils.brs" />
+
+    <children>
+        <Group
+          id="background">
+          <Rectangle
+            id="background"
+            color="0x5700A9FF"
+            width="1920"
+            height="1080" />
+        </Group>
+        <Label
+          id="Tittle"
+          font="font:LargeBoldSystemFont"
+          text="Bienvenide"
+          horizAlign="center"
+          vertAlign="center"
+          width="1920"
+          height="300"
+          color="0xD0BCFeff"/>
+            <LayoutGroup
+                    id="container"
+                    LayoutDirection="vert"
+                    itemSpacings="[25]"
+                    vertAlignment="center"
+                    horizAlignment="center"
+                    translation="[960, 400]">
+                    <TextEditBox
+                      id="email"
+                      hintText="Enter your e-mail"
+                      maxTextLength="70"
+                      clearOnDownKey="false"
+                      active="true"
+                      width="500"
+                      height="80"/>
+                    <TextEditBox
+                      id="password"
+                      hintText="Enter your password"
+                      maxTextLength="70"
+                      clearOnDownKey="false"
+                      secureMode="true"
+                      width="500"
+                      height="80"/>
+                    <appButton
+                      id="Button"
+                      text="Sign in"/>
+            </LayoutGroup>
+    </children>
+</component>
