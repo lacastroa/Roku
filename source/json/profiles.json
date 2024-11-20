@@ -1,0 +1,22 @@
+[
+    {
+        "id": "profile1",
+        "name": "Jhjhjhkj",
+        "imagePath": "pkg:/images/profiles/cat.jpg"
+    },
+    {
+        "id": "profile2",
+        "name": "Pepito",
+        "imagePath": "pkg:/images/profiles/rooster.jpg"
+    },
+    {
+        "id": "profile3",
+        "name": "Luis Marlon",
+        "imagePath": "pkg:/images/profiles/elephant.jpg"
+    },
+    {
+        "id": "profile4",
+        "name": "Milenio",
+        "imagePath": "pkg:/images/profiles/horse.jpg"
+    }
+]

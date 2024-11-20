@@ -3,7 +3,7 @@
     <script type="text/brightscript" uri="pkg:/components/escenaPrincipal/mainScene.brs" />
 
     <children>
-       <loginScene
-          id="loginScene"/>
+       <profileScene
+          id="profileScene"/>
     </children>
 </component>
