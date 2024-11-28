@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <component name="mainScene" extends="Scene">
+
+    <interface>
+        <field id="routerCallback" type="assocarray" onChange="routingEventCallback" alwaysNotify="true"/>
+        <field id="rootScene" type="boolean"/>
+    </interface>
+
     <script type="text/brightscript" uri="pkg:/components/escenaPrincipal/mainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/components/scenes/router.brs" />
 
     <children>
-       <profileScene
-          id="profileScene"/>
+       <Group id="scenes"/>
     </children>
 </component>

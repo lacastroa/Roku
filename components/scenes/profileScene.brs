@@ -89,5 +89,19 @@ function onKeyEvent(key as string, press as boolean) as boolean
             end if
         end if
     end if
+    if press = true then
+        if key = "OK" then
+            m.top.nameSelected = m[m.lastFocused].name
+            m.top.profileSelected = true
+            m.top.event = {
+                type: "PROFILE_SELECTED"
+                data: {
+                    name: m[m.lastFocused].name
+                }
+            }
+            handled = true
+        end if
+    end if
     return handled
 end function
+

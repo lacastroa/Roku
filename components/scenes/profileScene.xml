@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="profileScene" extends="Group">
+<component name="profileScene" extends="baseScene">
+    <interface>
+      <field id="profileSelected" type="boolean" value="false" alwaysNotify="true"/>
+      <field id= "nameSelected" type="string" value="" />
+    </interface>
+
     <script type="text/brightscript" uri="pkg:/components/scenes/profileScene.brs" />
 
     <children>
@@ -26,21 +31,13 @@
           itemSpacings="[50]"
           translation="[85, 300]">
           <profileItem
-            id="profileItem1"
-            text="Juanita"
-            uri="pkg:/images/profiles/cat.jpg"/>
+            id="profileItem1"/>
             <profileItem
-            id="profileItem2"
-            text="Pepito"
-            uri="pkg:/images/profiles/rooster.jpg"/>
+            id="profileItem2"/>
             <profileItem
-            id="profileItem3"
-            text="Luis Marlon"
-            uri="pkg:/images/profiles/horse.jpg"/>
+            id="profileItem3"/>
           <profileItem
-            id="profileItem4"
-            text="Milenio"
-            uri="pkg:/images/profiles/elephant.jpg"/>
+            id="profileItem4"/>
         </LayoutGroup>
   </children>
 </component>

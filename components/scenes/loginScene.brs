@@ -45,6 +45,7 @@ function onKeyEvent(key as string, press as boolean) as Boolean
             handled = true
         else if key = "OK" then
             handleOKPressed()
+            handled = true
         else if key = "up" and m.password.hasFocus() then
             m.email.setFocus(true)
             m.email.active = true
@@ -61,19 +62,27 @@ function onKeyEvent(key as string, press as boolean) as Boolean
         else if key = "down" and m.password.hasFocus() then
             m.password.active = false
             m.button.setFocus(true)
+            handled = true
+            print "el botón tiene el foco"
         end if
     end if
     return handled
 end function
 
 sub handleOKPressed()
-    if m.email.hasFocus() then
+    if m.email.hasFocus() = true then
         m.activeInput = "email"
         m.keyboard.visible = true
         m.keyboard.setFocus(true)
-    else if m.password.hasFocus() then
+    else if m.password.hasFocus() = true then
         m.activeInput = "password"
         m.keyboard.visible = true
         m.keyboard.setFocus(true)
+    else if m.button.hasFocus() = true then
+        m.top.event = {
+            type: "SIGN_IN"
+            data: {}
+        }
+        print "le di ok al botón sign in"
     end if
 end sub

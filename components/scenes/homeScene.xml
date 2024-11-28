@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="homeScene" extends="baseScene">
+    <interface>
+      <!-- <field id="profileSelected" type="boolean" value="false" alwaysNotify="true"/>
+      <field id= "nameSelected" type="string" value="" /> -->
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/scenes/homeScene.brs" />
+
+    <children>
+    <Group
+          id="background">
+          <Rectangle
+            id="background"
+            color="0x5700A9FF"
+            width="1920"
+            height="1080" />
+        </Group>
+    </children>
+</component>

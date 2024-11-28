@@ -26,16 +26,3 @@ sub onTextChanged()
     m.label.width = width
     m.background.width = width
 end sub
-
-function onKeyEvent(key as string, press as boolean) as boolean
-print "onKeyEventAppButton  " key
-    handled = false
-
-    if press = true then
-        if key = "OK" then
-            m.top.buttonSelected = true
-            handled = true
-        end if
-    end if
-    return handled
-end function
