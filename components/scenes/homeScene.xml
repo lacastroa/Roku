@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <component name="homeScene" extends="baseScene">
-    <interface>
-      <!-- <field id="profileSelected" type="boolean" value="false" alwaysNotify="true"/>
-      <field id= "nameSelected" type="string" value="" /> -->
-    </interface>
 
     <script type="text/brightscript" uri="pkg:/components/scenes/homeScene.brs" />
 
     <children>
-    <Group
-          id="background">
           <Rectangle
             id="background"
             color="0x5700A9FF"
             width="1920"
             height="1080" />
-        </Group>
+            <LeftMenu id="leftMenu"/>
+        <Label id="welcomeLabel" width="1920" height="100" horizAlign="left" vertAlign="center" translation= "[500, 100]" font="font:LargeBoldSystemFont"/>
+        <movies
+        id="movies"
+        translation="[500, 250]" />
+        
     </children>
 </component>

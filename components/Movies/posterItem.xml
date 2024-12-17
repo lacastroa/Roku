@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="posterItem" extends="Group">
+
+    <interface>
+        <field id="itemContent" type="node" onChange="showContent" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/Movies/posterItem.brs" />
+
+    <children>
+       <Rectangle
+            id="topMenuBackground"
+            color="0xD0BCFE30"
+            width="250"
+            height="396"
+            translation="[10, 0]"/>
+        <poster
+            id="posterImage"
+            width="250"
+            height="396"
+            translation="[10, 0]"
+            loadDisplayMode="scaleToFit" />
+        <Rectangle 
+            id="labelBackground"
+            color="0xD0BCFE90"
+            width="250"
+            height="54"
+            translation="[10, 342]"/>
+            <Label
+                id="posterLabel"
+                font="font:SmallestBoldSystemFont"
+                color="0x5700A9FF"
+                translation="[10, 342]"
+                horizAlign="center"
+                vertAlign="center"
+                width="250"
+                height="54"/>
+    </children>
+            
+</component>

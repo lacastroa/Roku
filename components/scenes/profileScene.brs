@@ -96,7 +96,7 @@ function onKeyEvent(key as string, press as boolean) as boolean
             m.top.event = {
                 type: "PROFILE_SELECTED"
                 data: {
-                    name: m[m.lastFocused].name
+                    name: m[m.lastFocused].text
                 }
             }
             handled = true

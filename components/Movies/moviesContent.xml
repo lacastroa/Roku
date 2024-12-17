@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="moviesContent" extends="ContentNode">
+
+    <children>
+       <ContentNode title="Movies">
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/ralph.jpg"
+             title="Ralph el demoledor"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/barbie.jpg"
+             title="Barbie"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/sirenita.jpg"
+             title="La Sirenita"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/moana.jpg"
+             title="Moana"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/interstellar.jpg"
+             title="Interestellar"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/coco.jpg"
+             title="Coco"/>
+       </ContentNode>
+       <ContentNode title="Series">
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/ralph.jpg"
+             title="Ralph el demoledor"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/barbie.jpg"
+             title="Barbie"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/sirenita.jpg"
+             title="La Sirenita"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/moana.jpg"
+             title="Moana"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/interstellar.jpg"
+             title="Interestellar"/>
+             <ContentNode
+             HDPosterUrl="pkg:/images/Movies/coco.jpg"
+             title="Coco"/>
+       </ContentNode>
+    </children>
+</component>

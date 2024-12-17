@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="movies" extends="Group">
+
+    <script type="text/brightscript" uri="pkg:/components/Movies/movies.brs" />
+
+    <children>
+       <Rowlist
+        id="movies"
+        itemComponentName="posterItem"
+        numRows="2"
+        itemSize="[1500, 396]"
+        rowItemSize="[[270, 396]]"
+        itemSpacing="[0, 100]"
+        showRowLabel="true"
+        drawFocusFeedback="true"
+        vertFocusAnimationStyle="fixedFocus"
+        rowFocusAnimationStyle="floatingFocus"/>
+
+    </children>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="leftMenu" extends="Group">
+
+<script type="text/brightscript" uri="pkg:/components/leftMenu/leftMenu.brs" />
+
+<children>
+    <Rectangle id="listBackground" width="400" height="1080" opacity="0.7" color="0xD0BCFE80">
+        <LabelList id="categories" translation="[50, 80]" itemSize="[300,100]" vertFocusAnimationStyle="floatingFocus">
+            <ContentNode id="dcMenuContent" role="content">
+                <ContentNode title="Action"/>
+                <ContentNode title="Animated"/>
+                <ContentNode title="Comedy"/>
+                <ContentNode title="Documentary"/>
+                <ContentNode title="Drama"/>
+                <ContentNode title="Specials"/>
+            </ContentNode>
+        </LabelList>
+    </Rectangle>
+</children>
+</component>
